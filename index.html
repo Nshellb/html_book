@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset = "utf-8">
+  <title></title>
+  <link href="./booklet/jquery.booklet.latest.css" type="text/css" rel="stylesheet" media="screen, projection, tv" />
+
+  <script src="./booklet/jquery-2.1.0.min.js"></script>
+  <script src="./booklet/jquery-ui-1.10.4.min.js"></script>
+
+  <script src="./booklet/jquery.booklet.latest.js"></script>
+</head>
+<body>
+  <script>
+		$(function() {
+			//single book
+			$('#mybook').booklet();
+
+			//multiple books with ID's
+			$('#mybook1, #mybook2').booklet();
+
+			//multiple books with a class
+			$('.mycustombooks').booklet();
+		});
+	</script>
+  <div id="mybook">
+    <div>
+        <h3>Yay, Page 1!</h3>
+    </div>
+    <div>
+        <h3>Yay, Page 2!</h3>
+    </div>
+    <div>
+        <h3>Yay, Page 3!</h3>
+    </div>
+    <div>
+        <h3>Yay, Page 4!</h3>
+    </div>
+  </div>
+</body>
+</html>
